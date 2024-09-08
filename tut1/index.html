@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rapuri Asritha</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+   
+   function showProjects() {
+            var projects = document.getElementById('projects');
+            if (projects.style.display === 'none') {
+                projects.style.display = 'block';
+            } else {
+                projects.style.display = 'none';
+            }
+        }
+
+
+        function showEducation() {
+            var education = document.getElementById('education');
+            if (education.style.display === 'none') {
+                education.style.display = 'block';
+            } else {
+                education.style.display = 'none';
+            }
+        }
+
+        function toggleChecklist() {
+            var checklist = document.getElementById('checklist');
+            if (checklist.style.display === 'none') {
+                checklist.style.display = 'block';
+            } else {
+                checklist.style.display = 'none';
+            }
+        }
+
+        function showAboutMe() {
+            var aboutMe = document.getElementById('about-me');
+            if (aboutMe.style.display === 'none') {
+                aboutMe.style.display = 'block';
+            } else {
+                aboutMe.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            
+                <li><a href="#" onclick="showEducation()">Education</a></li>
+                <li><a href="#" onclick="showProjects()">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="profile-info">
+            <h1>Rapuri Asritha</h1>
+            <p></p>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn" onclick="showAboutMe()">About me</a>
+           
+            <button onclick="toggleChecklist()" class="btn">Check List</button>
+            <a href="#" class="btn" onclick="showEducation()">Education</a>
+            <a href="#" class="btn" onclick="showProjects()">Projects</a>
+        </div>
+
+        <!-- Hidden About Me section -->
+        <div id="about-me" style="display: none;">
+            <h2>About Me</h2>
+            <p>
+                My name is Rapuri Asritha. I am from Guntur, Andhra Pradesh. I have a strong enthusiasm for data analysis, which drives my learning and professional interests.
+            </p>
+            <p>
+                In addition to my academic pursuits, I am an active participant in extracurricular activities. I enjoy playing sports and dancing, both of which are my hobbies.
+                Throughout my school and college years, I was recognized as the best sprinter and won prizes in many competitions. My passion for creativity and physical activity
+                keeps me engaged and motivated in various cultural activities.
+            </p>
+        </div>
+
+        <!-- Hidden checklist details -->
+        <div id="checklist" style="display: none;">
+            <h2>Data Analytics Skills Checklist</h2>
+            <table align="center" border="1">
+                <tr>
+                    <th>Skill Category</th>
+                    <th>Skill</th>
+                    <th>Proficiency Level</th>
+                    <th>Comments</th>
+                </tr>
+                <tr>
+                    <td>Data Manipulation</td>
+                    <td>SQL</td>
+                    <td>Intermediate</td>
+                    <td>Can write queries, join tables</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Excel</td>
+                    <td>Beginner</td>
+                    <td>Yet to learn</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Python (Pandas, NumPy)</td>
+                    <td>Basic</td>
+                    <td>Learning data manipulation using libraries</td>
+                </tr>
+                <tr>
+                    <td>Data Visualization</td>
+                    <td>Tableau and Power BI</td>
+                    <td>-</td>
+                    <td>Planning to learn</td>
+                </tr>
+                <tr>
+                    <td>Data Analysis</td>
+                    <td>Statistics</td>
+                    <td>Intermediate</td>
+                    <td>Understand statistical concepts, need hands-on experience</td>
+                </tr>
+                <tr>
+                    <td>Data Cleaning</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Need practical experience for cleaning and preprocessing data</td>
+                </tr>
+                <tr>
+                    <td>Communication</td>
+                    <td>Presentation Skills</td>
+                    <td>-</td>
+                    <td>Delivered small seminars in college</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Hidden education details -->
+        <div id="education" style="display: none;">
+            <h2>Education</h2>
+            <table border="1">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>CGPA/Percentage</th>
+                </tr>
+                <tr>
+                    <td>SSC</td>
+                    <td>Narayana School</td>
+                    <td>9.8 CGPA</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>Sri chaitanya College</td>
+                    <td>9.5 CGPA</td>
+                </tr>
+                <tr>
+                    <td>Degree</td>
+                    <td>Vignan College</td>
+                    <td>88%</td>
+                </tr>
+                <tr>
+                    <td>MCA</td>
+                    <td>Vignan Institute</td>
+                    <td>Pursuing</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Hidden projects details -->
+        <div id="projects" style="display: none;">
+            <h2>Data Analytics Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project 1: Sales Data Analysis</h3>
+                    <p>Analyzed sales data to identify trends and patterns. Created visualizations to support business decisions.</p>
+                </li>
+              
+                <li>
+                    <h3>Project 2: Inventory Forecasting</h3>
+                    <p>Developed a forecasting model to predict inventory needs based on historical data. Improved stock management.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

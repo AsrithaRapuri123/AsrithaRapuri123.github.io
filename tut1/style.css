@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #002E5D;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro {
+    background-color: #e8f0fa;
+    padding: 50px 0;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #002E5D;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* New CSS for Underlines on Headings */
+h1, h2 {
+    border-bottom: 2px solid #002E5D; /* Add underline with specified color */
+    display: inline-block;             /* Keep the underline only as wide as the text */
+    padding-bottom: 5px;               /* Space between text and underline */
+}
+
+/* No underline for h3 (Project headings) */
+h3 {
+    margin-top: 20px; /* Just adding margin instead of underline */
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #002E5D;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+#checklist {
+    margin-top: 30px;
+}
+
+#checklist table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#checklist th, #checklist td {
+    padding: 10px;
+    text-align: left;
+}
+
+#checklist th {
+    background-color: #002E5D;
+    color: white;
+}
+
+#checklist td {
+    background-color: #f0f4f8;
+}
+
+/* New CSS for Education Table Centering */
+#education table {
+    width: 80%;       /* Adjust width if needed */
+    margin: 20px auto; /* Center the table and add some margin */
+    border-collapse: collapse;
+}
+
+#education th {
+    background-color: #002E5D;
+    color: white;
+}
+
+#education td {
+    background-color: #f0f4f8;
+
+}
+
+#education th, #education td {
+    padding: 10px;
+    text-align: left
+}
+/* New CSS for Project Section Spacing */
+#projects h2 {
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+#projects ul {
+    padding: 0;
+    margin-top: 20px; /* Adds space above the projects */
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #002E5D;
+    padding: 20px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p {
+    margin-top: 10px;
+}
